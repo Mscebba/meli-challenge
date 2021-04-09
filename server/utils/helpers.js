@@ -29,7 +29,7 @@ exports.searchByName = async query => {
       { data } = result,
       hasResults = data.results.length > 0,
       filters = data.available_filters,
-      filteredData = author;
+      filteredData = { ...author };
 
     const hasCategories =
       filters &&
@@ -66,7 +66,7 @@ exports.itemById = async itemId => {
         category_id,
         pictures: [{ secure_url: picture }],
       } = result.data,
-      filteredData = author;
+      filteredData = { ...author };
 
     const detail = await itemDetail.get(`${itemId}/description`),
       { plain_text: description } = detail.data;
