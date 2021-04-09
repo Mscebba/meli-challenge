@@ -1,0 +1,18 @@
+@import 'styles/_variables.scss';
+@import 'styles/_mixins.scss';
+.container {
+  @extend .main-container;
+  @include slide-down();
+  background-color: $white;
+  align-self: flex-start;
+  justify-content: center;
+  align-items: center;
+  max-width: 1018px;
+  min-height: 204px;
+  margin: $margin-large auto 0;
+  border-radius: $radius;
+
+  .icon {
+    margin-right: 5rem;
+  }
+}

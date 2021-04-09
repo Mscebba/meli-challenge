@@ -1,0 +1,19 @@
+@import 'styles/_variables.scss';
+.btn {
+  background-color: $blue;
+  font-size: 16px;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  border: none;
+  border-radius: $radius;
+  transition: 0.18s ease-out;
+  width: 100%;
+  outline: none;
+  cursor: pointer;
+  &:hover {
+    background-color: darken($blue, 15%);
+  }
+}

@@ -1,0 +1,42 @@
+$sansFamily: 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+//theme
+$primaryColor: #ffe600;
+$secondaryColor: #eeeeee;
+
+$grey-300: #333333;
+$grey-600: #666666;
+$grey-900: #999999;
+
+$white: #ffffff;
+$black: #000000;
+$blue: #3483fa;
+
+$error: #ff0000;
+
+$header: 85px;
+$margin-small: 16px;
+$margin-large: 32px;
+
+$radius: 4px;
+
+$maxWidth: 1255px;
+
+$boxShadow: 0 0 2px 0
+  rgba(
+    $color: #000000,
+    $alpha: 0.3,
+  );
+
+$xxlarge-breakpoint: 1360px;
+$xlarge-breakpoint: 1024px;
+$large-breakpoint: 998px;
+$medium-breakpoint: 768px;
+$small-breakpoint: 560px;
+$xsmall-breakpoint: 380px;
+
+.main-container {
+  display: flex;
+  max-width: $maxWidth;
+  width: 100%;
+}

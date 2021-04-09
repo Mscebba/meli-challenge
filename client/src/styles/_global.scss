@@ -1,0 +1,22 @@
+html {
+  min-width: 330px;
+  font-size: 18px;
+  font-family: $sansFamily;
+}
+a {
+  color: inherit;
+}
+
+#root {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
+main {
+  background-color: $secondaryColor;
+  padding-bottom: 3rem;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}

@@ -1,0 +1,57 @@
+@import 'styles/_variables.scss';
+
+.item {
+  @extend .main-container;
+  background-color: $white;
+  padding: $margin-large;
+  border-radius: $radius;
+  flex: 1;
+
+  &__detail {
+    width: 70%;
+    figure {
+      display: flex;
+      max-width: 680px;
+      min-height: 500px;
+      max-height: 680px;
+      justify-content: center;
+      img {
+        object-fit: contain;
+      }
+    }
+    &_description {
+      h2 {
+        font-size: 28px;
+        font-weight: 400;
+        margin: $margin-large 0;
+      }
+      p {
+        font-size: 16px;
+        color: $grey-900;
+        white-space: pre-line;
+      }
+    }
+  }
+
+  &__price {
+    width: 30%;
+    &_condition {
+      font-size: 14px;
+      margin-bottom: $margin-small;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+    &_amount {
+      font-size: 46px;
+      font-weight: 400;
+      margin: $margin-large 0;
+      span {
+        font-size: 20px;
+        vertical-align: super;
+      }
+    }
+  }
+}

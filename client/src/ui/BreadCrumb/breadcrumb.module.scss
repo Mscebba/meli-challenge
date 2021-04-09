@@ -1,0 +1,27 @@
+@import 'styles/_variables.scss';
+.container {
+  @extend .main-container;
+  margin: $margin-small 0;
+
+  .breadcrumb {
+    font-size: 14px;
+    color: $grey-900;
+    display: flex;
+
+    li {
+      margin-right: 8px;
+
+      &:after {
+        content: url(./flecha.svg);
+        margin-left: 6px;
+      }
+
+      &:last-child {
+        font-weight: 600;
+        &:after {
+          content: '';
+        }
+      }
+    }
+  }
+}

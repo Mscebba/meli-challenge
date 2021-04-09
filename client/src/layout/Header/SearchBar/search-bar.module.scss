@@ -1,0 +1,26 @@
+@import 'styles/_variables.scss';
+
+.container {
+  @extend .main-container;
+
+  input {
+    flex: 1;
+    border: none;
+    border-radius: $radius 0 0 $radius;
+    padding: 0 1rem;
+    margin: 0;
+    height: 40px;
+    outline: none;
+  }
+
+  .search {
+    background: url(/assets/ic_Search.png) no-repeat center center
+      $secondaryColor;
+    border: none;
+    border-radius: 0 $radius $radius 0;
+    padding: 0 1rem;
+    margin: 0;
+    height: 40px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,15 @@
+@import 'styles/_variables.scss';
+
+.container {
+  @extend .main-container;
+  flex-direction: column;
+
+  &__content {
+    background-color: $white;
+    border-radius: $radius;
+    padding: $margin-small;
+    > div:last-child {
+      border-bottom: none;
+    }
+  }
+}

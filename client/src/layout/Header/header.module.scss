@@ -1,0 +1,19 @@
+@import 'styles/_variables.scss';
+
+.header {
+  background-color: $primaryColor;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  .container {
+    @extend .main-container;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      display: flex;
+    }
+    img {
+      margin-right: $margin-large;
+    }
+  }
+}

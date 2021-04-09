@@ -1,0 +1,62 @@
+@mixin slide-down($time: 0.6s) {
+  transform-origin: left top;
+  animation: slideDown ease $time;
+  -webkit-animation: slideDown ease $time;
+  -moz-animation: slideDown ease $time;
+  -o-animation: slideDown ease $time;
+  -ms-animation: slideDown ease $time;
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-moz-keyframes slideDown {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes slideDown {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-o-keyframes slideDown {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-ms-keyframes slideDown {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
