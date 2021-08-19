@@ -2,10 +2,6 @@
 
 To develop: Search bar, results and product detail
 
-## Demo
-
-Running demo **[here](https://meli-client.vercel.app/)**
-
 ## Technologies
 
 Client: React and Sass modules.
@@ -96,7 +92,3 @@ or using yarn
 ```bash
 $ yarn test
 ```
-
-### Project Demo
-
-[https://meli-client.vercel.app/](https://meli-client.vercel.app/)
